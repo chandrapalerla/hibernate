@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.hibernate.beans.PaymentDetailsBean"
+		table="Payment_Details">
+		<id name="paymentId">
+			<generator class="sequence">
+			</generator>
+		</id>
+		<property name="payername" column="Payer_Name" type="string"></property>
+		<property name="payerBankName"></property>
+		<property name="payerAddress"></property>
+		<property name="benename"></property>
+		<property name="beneBankName"></property>
+		<property name="beneAddress"></property>
+		<property name="amount"></property>
+		<property name="currency"></property>
+	</class>
+</hibernate-mapping>  

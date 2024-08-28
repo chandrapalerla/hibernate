@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.hibernate.beans.Book" table="BOOK_INFO">
+        <composite-id>
+            <key-property name="isbn" column="isbn" />
+            <key-property name="bookName" column="book_name" />
+            <key-property name="authorName" column="author_name" />
+        </composite-id>
+        <property name="category" column="category" type="java.lang.String" />
+        <property name="price" column="price" type="java.lang.Double" />
+    </class>
+</hibernate-mapping>
